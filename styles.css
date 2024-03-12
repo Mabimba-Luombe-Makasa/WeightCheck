@@ -1,0 +1,140 @@
+:root {
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese: crimson;
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #006b6b, #a0ffff);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: linear-gradient(45deg, #ffc0c093 ,#fffffff1);
+    padding: 2.3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    display: grid;
+    gap: 1rem;
+}
+
+.calculator {
+    display: grid;
+    gap: 1rem;
+}
+
+.calculator div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calculator label {
+    flex: 0 1 120px;
+    font-weight: 600;
+}
+
+.calculator input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    outline-color: #555;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.calculator button {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #00a1a3;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.calculator button[type="reset"] {
+    background-color: #333;
+}
+
+.calculator button:hover {
+    filter: brightness(140%);
+    transform: scale(1.025);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.output {
+    text-align: center;
+}
+
+.output #bmi {
+    font-size: 4rem;
+    font-weight: 800;
+    transition: color 0.8s ease, font-size 0.8s ease;
+}
+
+.output #description strong {
+    text-transform: uppercase;
+}
+
+.bmi-scale {
+    display: flex;
+}
+
+.bmi-scale div {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 7px solid var(--color);
+    padding: 10px;
+    position: relative;
+}
+
+
+.bmi-scale h4 {
+    font-size: 0.8rem;
+    color: slategray;
+}
+
+.underweight {
+    color: var(--underweight);
+}
+  
+.healthy {
+    color: var(--normal);
+}
+  
+.overweight {
+    color: var(--overweight);
+}
+  
+.obese {
+    color: var(--obese);
+}
+  
+
